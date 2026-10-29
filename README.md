@@ -1,214 +1,148 @@
-# Data Science & Machine Learning Portfolio
+# Data Science & Machine Learning | Project Portfolio
 
-**Python | Data Analysis | Machine Learning | Predictive Modeling | Model Evaluation**
+**Python · Data Analysis · Predictive Modeling · Machine Learning · Data Quality**
 
-Welcome to my Data Science and Machine Learning portfolio!
+I'm **Franco Curcho**, a Biomedical Engineer pursuing advanced studies in **Artificial Intelligence at the University of Buenos Aires (UBA)**. I develop data-driven solutions with Python, combining engineering problem-solving with sound statistical evaluation and clear communication.
 
-I'm **Franco Curcho**, a Biomedical Engineer pursuing advanced studies in Artificial Intelligence at the University of Buenos Aires (UBA).
+This portfolio brings together hands-on academic projects in data analysis, machine learning, explainable AI, and data quality. Each project focuses on the **problem, approach, results, and limitations**—not just the code.
 
-I specialize in applying Python, statistical analysis, and machine learning techniques to solve complex problems, extract meaningful insights, and develop reliable data-driven solutions.
+> **Open to freelance collaborations:** Python data processing, exploratory analysis, repeatable data workflows, predictive modeling, and model auditing.
 
-This repository contains practical projects covering exploratory data analysis, data quality assessment, anomaly detection, predictive modeling, explainable AI, and model auditing.
+## How I Can Help
 
----
+| Service | Example deliverables |
+| --- | --- |
+| **Data cleaning & analysis** | Cleaned CSV/Excel files, validation checks, visualizations, and analytical summaries |
+| **Python data workflows** | Reusable data transformation, validation, and reporting scripts |
+| **Machine learning** | Classification/regression experiments, baselines, model comparisons, and evaluation reports |
+| **Data quality & monitoring** | Missing-value checks, distribution-shift analysis, anomaly investigation |
+| **Model auditing** | Data leakage detection, explainability, and subgroup performance analysis |
 
-## Technical Skills
-
-| Area | Technologies & Methods |
-|---|---|
-| Programming | Python, SQL |
-| Data Analysis | Pandas, NumPy, Matplotlib, Seaborn |
-| Machine Learning | Scikit-learn, Regression, Classification, Random Forest |
-| Explainable AI | SHAP, Permutation Feature Importance |
-| Data Quality | Missing Values, Outlier Detection, Data Drift |
-| Model Evaluation | Cross-Validation, MAE, RMSE, R², Data Leakage Prevention |
-| Development Tools | Jupyter Notebook, Git, GitHub |
-
----
+These are areas I can work in; the projects below are **academic work, not past client engagements**.
 
 ## Featured Projects
 
-### 01. Machine Learning Interpretability & Data Leakage Detection
+### 01 · Salary Prediction — Explainability & Data Leakage Detection
 
-**Predicting Data Science Salaries with Explainable AI**
+[**View notebook**](./TP1/Actividad_1_Interpretabilidad_Modelos.ipynb)
 
-[Explore Project](./TP1)
+**Challenge:** An apparently accurate salary prediction model can be misleading if its inputs include information unavailable at prediction time.
 
-**Objective**
+**Approach:** Data inspection, Random Forest regression, permutation feature importance, SHAP explanations, and retraining after removing salary-related leakage variables.
 
-Develop and evaluate a salary prediction model while investigating feature importance, model reliability, and potential data leakage.
-
-**Methods and Tools**
-- Data preprocessing with Pandas.
-- Regression modeling using Random Forest.
-- Feature importance analysis using permutation importance.
-- Local interpretability using SHAP.
-- Model evaluation using MAE, RMSE, and R².
-- Identification and correction of target leakage.
-
-**Key Results**
-
-| Metric | Original Model | After Leakage Correction |
-|---|---:|---:|
-| R² | 0.948 | 0.368 |
+| Metric | Original model | Leakage-corrected model |
+| --- | ---: | ---: |
+| R² | **0.948** | **0.368** |
 | MAE | $2,146 | $38,577 |
 | RMSE | $15,091 | $52,595 |
 
-**Key Insight**
+**Takeaway:** Removing leaking features dramatically reduces the reported model performance. Reliable evaluation matters more than an impressive but misleading score.
 
-The original model achieved an apparently excellent R² of 0.948. However, the analysis revealed target leakage caused by variables containing information directly related to the target.
-
-After removing the problematic features, R² decreased to 0.368, providing a more realistic assessment of predictive performance.
-
-**Practical Application**
-
-This project demonstrates the importance of model auditing, feature selection, explainability, and reliable evaluation before deploying predictive systems.
+`Python` · `Pandas` · `Scikit-learn` · `SHAP` · `Model Evaluation`
 
 ---
 
-### 02. Data Quality, Data Drift & Anomaly Detection
+### 02 · Data Quality, Distribution Shift & Anomaly Detection
 
-**Monitoring Data Reliability and Detecting Unusual Observations**
+[**View notebook**](./TP2/Actividad_2_Calidad_Drift_Anomalias.ipynb)
 
-[Explore Project](./TP2)
+**Challenge:** Missing data, shifting distributions, and unusual records can affect the reliability of analytics and machine-learning systems.
 
-**Objective**
+**Approach:** Completeness and validity checks, Population Stability Index (PSI), Isolation Forest, Local Outlier Factor (LOF), and interpretation of flagged observations.
 
-Evaluate data quality, identify changes in feature distributions, and detect anomalous records that could affect analytical workflows and machine learning models.
+**Takeaway:** Demonstrates a structured process for monitoring datasets and investigating unusual observations without assuming every outlier is an error.
 
-**Methods and Tools**
-- Data completeness and validity checks.
-- Feature distribution analysis.
-- Population Stability Index (PSI).
-- Isolation Forest.
-- Local Outlier Factor (LOF).
-- Investigation and interpretation of anomalous observations.
-
-**Key Insights**
-
-The analysis investigates how changes in data distributions may affect model reliability and how anomaly detection methods can identify potentially unusual observations.
-
-**Practical Application**
-
-These techniques can support automated data validation, dataset monitoring, quality assurance, and the detection of inconsistencies in business data.
+`Data Validation` · `PSI` · `Isolation Forest` · `LOF` · `Python`
 
 ---
 
-### 03. Exploratory Data Analysis — Communities and Crime
+### 03 · Communities and Crime — Exploratory Data Analysis
 
-**Exploring Socioeconomic and Crime-Related Data**
+[**View notebook**](./Tp3/Actividad_3_Communities_Crime.ipynb)
 
-[Explore Project](./Tp3)
+**Challenge:** Understand the distributions, data limitations, and relationships in socioeconomic and crime-related indicators.
 
-**Objective**
+**Approach:** Data preparation, descriptive statistics, distribution analysis, and visual exploration.
 
-Analyze the Communities and Crime dataset to explore socioeconomic variables, study statistical distributions, and investigate relationships within the data.
+**Takeaway:** Illustrates how to transform a complex raw dataset into an interpretable exploratory study. Relationships found in observational data should not be interpreted as causal effects.
 
-**Methods and Tools**
-- Data loading and preprocessing.
-- Exploratory Data Analysis (EDA).
-- Descriptive statistics.
-- Distribution and variable relationship analysis.
-- Data visualization and interpretation.
-
-**Practical Application**
-
-Exploratory analysis helps organizations understand their data, identify meaningful patterns, and prepare datasets for more advanced statistical analysis and machine learning.
+`Exploratory Data Analysis` · `Pandas` · `Statistics` · `Visualization`
 
 ---
 
-### 04. Regression Modeling, Data Leakage Prevention & Bias Auditing
+### 04 · Income Prediction — Regression, Validation & Model Auditing
 
-**Building and Evaluating Reliable Income Prediction Models**
+[**View notebook**](./TP4/Actividad_4_Ingresos_Leakage_Sesgos.ipynb)
 
-[Explore Project](./TP4)
+**Challenge:** Build a regression model with defensible validation while evaluating more than overall predictive accuracy.
 
-**Objective**
-
-Develop a regression workflow for income prediction, compare modeling approaches, implement leakage prevention strategies, and audit predictive performance across demographic groups.
-
-**Methods and Tools**
-- Missing-value imputation.
-- Feature preprocessing with Scikit-learn pipelines.
-- Linear Regression.
-- Target transformation using logarithms.
-- Group-aware data splitting and cross-validation.
-- Model evaluation against a baseline.
-- Model auditing and performance comparison across groups.
-
-**Key Results**
+**Approach:** Missing-value imputation, Scikit-learn pipelines, target transformations, group-aware data splitting, cross-validation, baseline comparison, and subgroup error analysis.
 
 | Model | Test MAE |
-|---|---:|
-| Median Baseline | 35,940 |
-| Selected Regression Model | 29,310 |
+| --- | ---: |
+| Median baseline | 35,940 |
+| Selected regression model | **29,310** |
 
-The selected model reduced test MAE relative to the median baseline. The project also analyzes predictive limitations and differences in model performance across demographic groups.
+**Takeaway:** The selected model improves test MAE relative to the median baseline. The notebook also examines limitations and differences in prediction errors across demographic groups.
 
-**Practical Application**
+`Regression` · `Cross-Validation` · `Pipelines` · `Leakage Prevention` · `Model Auditing`
 
-This project demonstrates responsible model development, appropriate validation strategies, performance auditing, and the evaluation of models beyond a single aggregate metric.
+## Technical Toolkit
 
----
+| Area | Tools and methods |
+| --- | --- |
+| **Programming** | Python, SQL |
+| **Data analysis** | Pandas, NumPy, Matplotlib, Seaborn |
+| **Machine learning** | Scikit-learn, regression, classification, Random Forest |
+| **Interpretability** | SHAP, permutation feature importance |
+| **Data quality** | Missing-value analysis, PSI, Isolation Forest, LOF |
+| **Development** | Jupyter Notebook, Git, GitHub |
 
 ## Repository Structure
 
 ```text
-Analisis-de-datos-2/
-│
+Data-Science---Machine-Learning--/
+├── README.md
 ├── TP1/
 │   ├── Actividad_1_Interpretabilidad_Modelos.ipynb
 │   └── ds_salaries.csv
-│
 ├── TP2/
 │   ├── Actividad_2_Calidad_Drift_Anomalias.ipynb
 │   └── ds_salaries.csv
-│
 ├── Tp3/
 │   ├── Actividad_3_Communities_Crime.ipynb
 │   ├── communities.data
-│   └── communities.names
-│
+│   ├── communities.names
+│   └── ACTIVIDAD 3.pdf
 └── TP4/
     ├── Actividad_4_Ingresos_Leakage_Sesgos.ipynb
     └── census_income.xlsx
 ```
 
-Project instructions and supporting materials are available within the corresponding directories.
+The original folder names are preserved so the existing notebook links continue to work.
 
----
+## Getting Started
 
-## Running the Projects
-
-Clone the repository:
+Clone the current repository:
 
 ```bash
-git clone https://github.com/FrancoCurcho/Analisis-de-datos-2.git
-cd Analisis-de-datos-2
+git clone https://github.com/FrancoCurcho/Data-Science---Machine-Learning--.git
+cd Data-Science---Machine-Learning--
 ```
 
 Create and activate a virtual environment:
 
 ```bash
 python -m venv .venv
-```
-
-Linux/macOS:
-
-```bash
 source .venv/bin/activate
 ```
 
-Windows PowerShell:
+On Windows PowerShell, activate with `.venv\Scripts\Activate.ps1` instead.
 
-```powershell
-.venv\Scripts\Activate.ps1
-```
-
-Install the main libraries:
+Install the principal packages used in the notebooks:
 
 ```bash
-pip install numpy pandas matplotlib seaborn scikit-learn shap jupyter openpyxl threadpoolctl
+python -m pip install numpy pandas matplotlib seaborn scikit-learn shap jupyter openpyxl threadpoolctl
 ```
 
 Launch Jupyter:
@@ -217,41 +151,22 @@ Launch Jupyter:
 jupyter notebook
 ```
 
-Navigate to the desired project folder and open its notebook.
+Open each notebook from its own project folder so its relative data paths can resolve.
 
-**Note:** These are the main dependencies identified in the notebooks. Package versions have not yet been pinned, and full reproducibility across environments has not been verified.
+**Reproducibility note:** Package versions have not yet been pinned, and a complete clean-environment execution test has not been performed. Individual notebooks may need environment-specific adjustments; inspect their initial cells for data-path and package assumptions.
 
----
+## About the Results
 
-## What I Can Help You With
+These projects were developed in an **academic learning context**. Reported metrics describe the specific datasets and experimental configurations in the notebooks; they are not guarantees of performance on new datasets.
 
-The techniques demonstrated in these projects can be applied to real-world business challenges, including:
+I prioritize clear assumptions, reliable validation, readable code, and honest interpretation of results.
 
-- **Data Analysis:** cleaning, preprocessing, exploring, and visualizing datasets.
-- **Python Automation:** automating repetitive data processing and reporting tasks.
-- **Machine Learning:** developing and evaluating predictive models.
-- **Data Quality:** detecting missing values, anomalies, inconsistencies, and distribution shifts.
-- **Model Auditing:** identifying leakage, investigating feature importance, and evaluating model reliability.
-- **Technical Reporting:** communicating analytical findings through documented workflows and visualizations.
+## Let's Collaborate
 
-My focus is on delivering clear, reproducible, and technically sound solutions.
-
----
-
-## About This Portfolio
-
-These projects were developed in an academic setting as part of my training in Artificial Intelligence.
-
-They demonstrate practical techniques and analytical approaches that can be adapted to professional applications.
-
-Performance metrics refer to the specific datasets and experimental setups described in each notebook; they should not be interpreted as guaranteed performance on other datasets.
-
----
-
-## Let's Connect
-
-I'm interested in freelance opportunities, collaborative projects, and professional roles involving Data Science, Machine Learning, Python development, and Artificial Intelligence.
+I am interested in freelance projects and collaborations involving Python data processing, exploratory data analysis, workflow automation, predictive modeling, and machine-learning evaluation.
 
 **GitHub:** [FrancoCurcho](https://github.com/FrancoCurcho)
 
-*Turning data into insights and building reliable AI solutions.*
+---
+
+*Reliable analysis starts with trustworthy data, clear assumptions, and measurable results.*
