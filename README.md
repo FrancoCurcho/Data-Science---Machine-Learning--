@@ -24,7 +24,7 @@ These are areas I can work in; the projects below are **academic work, not past 
 
 ### 01 · Salary Prediction — Explainability & Data Leakage Detection
 
-[**View notebook**](./TP1/Actividad_1_Interpretabilidad_Modelos.ipynb)
+[**Explore project**](./01-model-interpretability/README.md) · [View notebook](./01-model-interpretability/Actividad_1_Interpretabilidad_Modelos.ipynb)
 
 **Challenge:** An apparently accurate salary prediction model can be misleading if its inputs include information unavailable at prediction time.
 
@@ -36,6 +36,8 @@ These are areas I can work in; the projects below are **academic work, not past 
 | MAE | $2,146 | $38,577 |
 | RMSE | $15,091 | $52,595 |
 
+![Salary prediction: model comparison](./01-model-interpretability/assets/model_comparison.png)
+
 **Takeaway:** Removing leaking features dramatically reduces the reported model performance. Reliable evaluation matters more than an impressive but misleading score.
 
 `Python` · `Pandas` · `Scikit-learn` · `SHAP` · `Model Evaluation`
@@ -44,11 +46,13 @@ These are areas I can work in; the projects below are **academic work, not past 
 
 ### 02 · Data Quality, Distribution Shift & Anomaly Detection
 
-[**View notebook**](./TP2/Actividad_2_Calidad_Drift_Anomalias.ipynb)
+[**Explore project**](./02-data-quality-monitoring/README.md) · [View notebook](./02-data-quality-monitoring/Actividad_2_Calidad_Drift_Anomalias.ipynb)
 
 **Challenge:** Missing data, shifting distributions, and unusual records can affect the reliability of analytics and machine-learning systems.
 
 **Approach:** Completeness and validity checks, Population Stability Index (PSI), Isolation Forest, Local Outlier Factor (LOF), and interpretation of flagged observations.
+
+![Population Stability Index comparison](./02-data-quality-monitoring/assets/psi_comparison.png)
 
 **Takeaway:** Demonstrates a structured process for monitoring datasets and investigating unusual observations without assuming every outlier is an error.
 
@@ -58,7 +62,7 @@ These are areas I can work in; the projects below are **academic work, not past 
 
 ### 03 · Communities and Crime — Exploratory Data Analysis
 
-[**View notebook**](./Tp3/Actividad_3_Communities_Crime.ipynb)
+[**Explore project**](./03-communities-crime-eda/README.md) · [View notebook](./03-communities-crime-eda/Actividad_3_Communities_Crime.ipynb)
 
 **Challenge:** Understand the distributions, data limitations, and relationships in socioeconomic and crime-related indicators.
 
@@ -72,7 +76,7 @@ These are areas I can work in; the projects below are **academic work, not past 
 
 ### 04 · Income Prediction — Regression, Validation & Model Auditing
 
-[**View notebook**](./TP4/Actividad_4_Ingresos_Leakage_Sesgos.ipynb)
+[**Explore project**](./04-income-prediction-audit/README.md) · [View notebook](./04-income-prediction-audit/Actividad_4_Ingresos_Leakage_Sesgos.ipynb)
 
 **Challenge:** Build a regression model with defensible validation while evaluating more than overall predictive accuracy.
 
@@ -82,6 +86,8 @@ These are areas I can work in; the projects below are **academic work, not past 
 | --- | ---: |
 | Median baseline | 35,940 |
 | Selected regression model | **29,310** |
+
+![Test MAE comparison](./04-income-prediction-audit/tp4_test_mae.png)
 
 **Takeaway:** The selected model improves test MAE relative to the median baseline. The notebook also examines limitations and differences in prediction errors across demographic groups.
 
@@ -103,27 +109,31 @@ These are areas I can work in; the projects below are **academic work, not past 
 ```text
 Data-Science---Machine-Learning--/
 ├── README.md
-├── TP1/
+├── 01-model-interpretability/
+│   ├── README.md
 │   ├── Actividad_1_Interpretabilidad_Modelos.ipynb
-│   └── ds_salaries.csv
-├── TP2/
+│   ├── ds_salaries.csv
+│   └── assets/model_comparison.png
+├── 02-data-quality-monitoring/
+│   ├── README.md
 │   ├── Actividad_2_Calidad_Drift_Anomalias.ipynb
-│   └── ds_salaries.csv
-├── Tp3/
+│   ├── ds_salaries.csv
+│   └── assets/psi_comparison.png
+├── 03-communities-crime-eda/
+│   ├── README.md
 │   ├── Actividad_3_Communities_Crime.ipynb
 │   ├── communities.data
-│   ├── communities.names
-│   └── ACTIVIDAD 3.pdf
-└── TP4/
+│   └── communities.names
+└── 04-income-prediction-audit/
+    ├── README.md
     ├── Actividad_4_Ingresos_Leakage_Sesgos.ipynb
-    └── census_income.xlsx
+    ├── census_income.xlsx
+    └── tp4_test_mae.png
 ```
-
-The original folder names are preserved so the existing notebook links continue to work.
 
 ## Getting Started
 
-Clone the current repository:
+Clone the repository:
 
 ```bash
 git clone https://github.com/FrancoCurcho/Data-Science---Machine-Learning--.git
@@ -139,7 +149,7 @@ source .venv/bin/activate
 
 On Windows PowerShell, activate with `.venv\Scripts\Activate.ps1` instead.
 
-Install the principal packages used in the notebooks:
+Install the main packages used in the notebooks:
 
 ```bash
 python -m pip install numpy pandas matplotlib seaborn scikit-learn shap jupyter openpyxl threadpoolctl
@@ -170,3 +180,4 @@ I am interested in freelance projects and collaborations involving Python data p
 ---
 
 *Reliable analysis starts with trustworthy data, clear assumptions, and measurable results.*
+
